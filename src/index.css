@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .error-class {
+      color: theme('colors.input-errors');
+      font-size: theme('fontSize.xxs');
+    }
+}
