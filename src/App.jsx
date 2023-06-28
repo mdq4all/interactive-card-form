@@ -26,7 +26,7 @@ function App() {
       </header>
       <CardBack securityCode={dataCard.securityCode} />
       <CardFront dataCard={dataCard} />
-      {success ? <SuccessNotification setSuccess={setSuccess} /> 
+      {success ? <SuccessNotification setSuccess={setSuccess} setDataCard={setDataCard} /> 
         : 
         <Form setDataCard={setDataCard} dataCard={dataCard} setSuccess={setSuccess} />}
      </div>

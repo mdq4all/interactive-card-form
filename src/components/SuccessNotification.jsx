@@ -1,6 +1,15 @@
-
-const SuccessNotification = ({ setSuccess }) => {
-    const handleClick = () => setSuccess(false);
+const initialState={
+    cardName: '',
+    cardNumber: '',
+    expMonth: '',
+    expYear: '',
+    securityCode: ''
+  };
+const SuccessNotification = ({ setSuccess, setDataCard }) => {
+    const handleClick = () => {
+        setSuccess(false);
+        setDataCard(initialState);
+    }
   return (
     <div className="flex flex-col justify-center items-center w-full mt-20 px-7">
       <img src="/images/icon-complete.svg" alt="logo de aceptacion"
